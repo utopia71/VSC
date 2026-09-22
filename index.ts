@@ -32,8 +32,7 @@ function showMenu(): void {
                 divNumbers();
                 break;
             case '5':
-                console.log('Функция возведения в степень еще не реализована.');
-                showMenu();
+                povNumbers();
                 break;
             case '0':
                 rl.close();
@@ -71,5 +70,9 @@ function divNumbers(): void {
         console.log(`Частное чисел: ${num1 / num2}`);
         showMenu();
     }
+}
+function povNumbers(): void {
+    console.log(`Результат возведения в степень: ${num1 ** num2}`);
+    showMenu();
 }
 showMenu();
