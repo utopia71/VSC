@@ -23,8 +23,7 @@ function showMenu(): void {
                 inputNumbers();
                 break;
             case '2':
-                console.log('Функция сложения еще не реализована.');
-                showMenu();
+                sumNumbers();
                 break;
             case '3':
                 console.log('Функция вычитания еще не реализована.');
@@ -58,5 +57,8 @@ function inputNumbers(): void {
         });
     });
 }
-
+function sumNumbers(): void{
+    console.log(`Сумма чисел: ${num1 + num2}`);
+    showMenu();
+}
 showMenu();
