@@ -26,8 +26,7 @@ function showMenu(): void {
                 sumNumbers();
                 break;
             case '3':
-                console.log('Функция вычитания еще не реализована.');
-                showMenu();
+                subNumbers();
                 break;
             case '4':
                 console.log('Функция деления еще не реализована.');
@@ -59,6 +58,10 @@ function inputNumbers(): void {
 }
 function sumNumbers(): void{
     console.log(`Сумма чисел: ${num1 + num2}`);
+    showMenu();
+}
+function subNumbers(): void {
+    console.log(`Разница чисел: ${num1 - num2}`);
     showMenu();
 }
 showMenu();
