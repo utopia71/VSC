@@ -29,8 +29,7 @@ function showMenu(): void {
                 subNumbers();
                 break;
             case '4':
-                console.log('Функция деления еще не реализована.');
-                showMenu();
+                divNumbers();
                 break;
             case '5':
                 console.log('Функция возведения в степень еще не реализована.');
@@ -63,5 +62,14 @@ function sumNumbers(): void{
 function subNumbers(): void {
     console.log(`Разница чисел: ${num1 - num2}`);
     showMenu();
+}
+function divNumbers(): void {
+    if (num2 == 0){
+        console.log(`На 0 делить нельзя`)
+    }
+    else {
+        console.log(`Частное чисел: ${num1 / num2}`);
+        showMenu();
+    }
 }
 showMenu();
